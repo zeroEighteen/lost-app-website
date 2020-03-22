@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+head, body {
+    margin: 0;
+}
+
+body{
+    height: 200vh;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    margin: 0; 
+    width: 100%;
+    height: 70px;
+    list-style: none;
+    background-color: #507DBC;
+}
+
+.navBarItem {
+    display: inline-block;
+    padding: 24px;
+    margin: 0;
+    background-color: #507DBC;
+    transition-duration: 0.2s;
+
+}
+
+#appDownload {
+    position: relative;
+    float: right;
+    right: 40px;
+}
+
+#logoToHome {
+    display: inline-block;
+    padding: 0px;
+    margin-right: 10px;
+    background-color: #507DBC;
+    transition-duration: 0.2s;
+    float: left;
+}
+/* just in case ;)
+#googlePlayBadge {
+    position: relative;
+    right: 200px;
+    display: inline-block;
+    padding:0px;
+    background-color: #507DBC;
+    transition-duration: 0.2s;
+    float: right;
+
+}
+
+#appStoreBadge {
+    position: relative;
+    right: 100px;
+    display: inline-block;
+    padding:0px;
+    background-color: #507DBC;
+    transition-duration: 0.2s;
+    float: right;
+
+}
+*/
+
+.navBarItem:hover {
+    background-color: #FFFDF7;
+}
+.navBarItem:hover .navBarLink{
+    color: #507DBC;
+}
+.navBarLink {
+    color: #FFFDF7;
+    font-size: 18px;
+    font-family: Montserrat;
+    text-decoration: none;
+
+}
