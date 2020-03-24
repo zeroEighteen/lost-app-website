@@ -87,7 +87,7 @@ body{
 @media only screen and (max-width: 768px) {
     .navBarItem{
         display: block;
-        border-bottom: solid 3px #FFFDF7;
+        border-top: solid 3px #FFFDF7;
     }
 
     .navBarHidden {
