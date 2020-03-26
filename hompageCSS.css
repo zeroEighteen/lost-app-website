@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+:root {
+    font-size: 24px;
+}
+
+html {
+    height: 100%;
+}
+head, body {
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.mobileHamburger {
+    display: none;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    margin: 0; 
+    padding: 0;
+    width: 100%;
+    height: 70px;
+    list-style: none;
+    background-color: #507DBC;
+}
+
+.navBarItem {
+    display: inline-block;
+    padding: 24px;
+    margin: 0;
+    background-color: #507DBC;
+    transition-duration: 0.2s;
+
+}
+
+nav {
+    margin-bottom: 100px;
+}
+
+#appDownload {
+    position: relative;
+    float: right;
+    right: 40px;
+}
+
+#logoToHome {
+    display: inline-block;
+    padding: 0px;
+    margin-right: 30px;
+    background-color: #507DBC;
+    transition-duration: 0.2s;
+    float: left;
+}
+/* just in case ;)
+#googlePlayBadge {
+    position: relative;
+    right: 200px;
+    display: inline-block;
+    padding:0px;
+    background-color: #507DBC;
+    transition-duration: 0.2s;
+    float: right;
+
+}
+
+#appStoreBadge {
+    position: relative;
+    right: 100px;
+    display: inline-block;
+    padding:0px;
+    background-color: #507DBC;
+    transition-duration: 0.2s;
+    float: right;
+
+}
+*/
+
+.navBarItem:hover {
+    background-color: #FFFDF7;
+}
+.navBarItem:hover .navBarLink{
+    color: #507DBC;
+}
+.navBarLink {
+    color: #FFFDF7;
+    font-size: 18px;
+    font-family: Montserrat;
+    text-decoration: none;
+
+}
+#navBarLinks {
+    animation-duration: 0.5s;
+}
+
+.content { 
+    height: 100px;
+    min-height: 100%;
+}
+
+.content p {
+    z-index: 99;
+    font-family: Montserrat;
+    font-size: 36px;
+    color: #000;
+}
+
+
+
+.footer {
+    text-align: left;
+    width: 100%;
+    height: 130px;
+    background: #507DBC;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer ul {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    top: 25px;
+    left: 40px;
+}
+
+.fab {
+    position: relative;
+    color: #0A3242;
+    background-color: #FFFDF7;
+    border: solid 10px #FFFDF7;
+    border-left-width: 15px;
+    border-right-width: 15px;
+    border-radius: 20px;
+    margin-right: 15px;
+    font-size: 70px;
+    transition-duration: 0.2s;
+}
+
+.fab:hover {
+    transform: scale(1.25);
+    co
+}
+
+/*Responsive navbar here*/
+@media only screen and (max-width: 768px) {
+    .navBarItem{
+        display: block;
+        border-top: solid 3px #FFFDF7;
+    }
+
+    .navBarHidden {
+        display: none;
+    }
+
+    #logoToHome{
+        display: none;
+    }
+
+    #appDownload {
+        float: none;
+        right: 0px;
+    }
+
+    .mobileHamburger {
+        display: block;
+        height: 30px;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    .mobileLine {
+        width: 50px;
+        height: 5px;
+        border-radius: 3px;
+        background-color: #FFFDF7;
+        transition-duration: 0.35s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .mobileLine::before, .mobileLine::after{
+        position: absolute;
+        content: "";
+        width: 50px;
+        height: 5px;
+        border-radius: 3px;
+        background-color: #FFFDF7;
+        transition-duration: 0.25s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .mobileLine::before {
+        transform: translateY(-12px);
+    }
+
+    .mobileLine::after {
+        transform: translateY(12px);
+    }
+    
+    .mobileHamburger.menuOpen .mobileLine {
+        transform: rotate(135deg);
+        background: transparent;
+    }
+
+    .mobileHamburger.menuOpen .mobileLine::before {
+    
+        transform: rotate(-90deg) ;
+    }
+
+    .mobileHamburger.menuOpen .mobileLine::after {
+        transform: rotate(0deg);
+    } 
+    
+}
