@@ -1,2 +1,2 @@
-# lost-app-website
-Website for "Lost"
+#The webssite for Lost
+######Made with love by Elliot :)
