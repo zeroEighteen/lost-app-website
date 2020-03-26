@@ -15,8 +15,7 @@ function toggleMobileNavBar() {
         navBarList.classList.remove("animated", "fadeInUp");
         navBarList.classList.add("animated", "fadeOutDown");
         mobileMenu.classList.remove('menuOpen');
-        setTimeout(() => {  navBarList.classList.add("navBarHidden"); }, 700);
-        hamburgerBool = false;
+        setTimeout(() => {  navBarList.classList.add("navBarHidden");hamburgerBool = false; }, 350);
     }
 }
 
